@@ -3,13 +3,13 @@ let costForFirst100Person = 5000;
 let costForSecond100Person = 4000;
 let costForRestPerson = 3000;
 
+/* Function Started */
+
 function picnicBudget(person) {
   if (typeof person != "number") {
-    console.log("Please Enter a Number!");
+    return "Please Enter a Number!";
   } else if (person <= 0) {
-    console.log(
-      "Please Enter a Positive Number Value Which is Greater than Zero!"
-    );
+    return "Please Enter a Positive Number Value Which is Greater than Zero!";
   } else if (person <= 100) {
     const costForFirst100 = person * costForFirst100Person;
     return cost;
@@ -29,5 +29,7 @@ function picnicBudget(person) {
   }
 }
 
-let cost = picnicBudget(0);
+/* Function Ended */
+
+let cost = picnicBudget(150);
 console.log(cost);
