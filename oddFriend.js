@@ -4,7 +4,9 @@ const myFriends = ["babu", "cabu", "dabu", "kabul", "fabu", "rahim"];
 function oddFriend(friends) {
   let odd = [];
   for (let i = 0; i < friends.length; i++) {
-    if (friends[i].length % 2 != 0) {
+    if (typeof friends[i] != "string") {
+      return "Please Enter Your Input Parameter as an Array Which is Containing String!";
+    } else if (friends[i].length % 2 != 0) {
       odd.push(friends[i]);
       break;
     }
