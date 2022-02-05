@@ -22,7 +22,7 @@ function pandaCost(singaraQuantity, somusaQuantity, jilapiQuantity) {
   return totalFoodPrice;
 }
 
-let bill = pandaCost(1, 1, "J");
+let bill = pandaCost(1, 1, 1);
 console.log(bill);
 
 /* Function For pandaCost Ended */
