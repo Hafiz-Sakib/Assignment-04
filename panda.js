@@ -8,6 +8,13 @@ const jilapiPrice = 15;
 /* Function Started */
 function pandaCost(singaraQuantity, somusaQuantity, jilapiQuantity) {
   let totalFoodPrice = 0;
+  if (typeof singaraQuantity != "number") {
+    console.log("Please Enter a number to define your Singara Quantity!");
+  } else if (typeof somusaQuantity != "number") {
+    console.log("Please Enter a number to define your Somusa Quantity!");
+  } else if (typeof jilapiQuantity != "number") {
+    console.log("Please Enter a number to define your Jilapi Quantity!");
+  }
   singaraCost = singaraPrice * singaraQuantity;
   somusaCost = somusaPrice * somusaQuantity;
   jilapiCost = jilapiPrice * jilapiQuantity;
@@ -15,7 +22,7 @@ function pandaCost(singaraQuantity, somusaQuantity, jilapiQuantity) {
   return totalFoodPrice;
 }
 
-let bill = pandaCost(5, 5, 5);
+let bill = pandaCost(1, 1, "J");
 console.log(bill);
 
 /* Function For pandaCost Ended */

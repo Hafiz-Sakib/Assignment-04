@@ -10,4 +10,5 @@ function AnaToVori(ana) {
 
 let gold = AnaToVori(16);
 console.log(gold);
+
 /* Ana To Vori Function Ends */
