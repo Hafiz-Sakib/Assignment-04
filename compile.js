@@ -44,6 +44,8 @@ let costForFirst100Person = 5000;
 let costForSecond100Person = 4000;
 let costForRestPerson = 3000;
 
+/* Function Started */
+
 function picnicBudget(person) {
   if (typeof person != "number") {
     return "Please Enter a Number!";
@@ -51,7 +53,7 @@ function picnicBudget(person) {
     return "Please Enter a Positive Number Value Which is Greater than Zero!";
   } else if (person <= 100) {
     const costForFirst100 = person * costForFirst100Person;
-    return cost;
+    return costForFirst100;
   } else if (person <= 200) {
     const costForFirst100 = 100 * costForFirst100Person;
     const restPerson = person - 100;
@@ -68,9 +70,10 @@ function picnicBudget(person) {
   }
 }
 
-/* 
-let cost = picnicBudget(150);
-console.log(cost); */
+/* Function Ended */
+
+let cost = picnicBudget(99);
+console.log(cost);
 
 // Problem:4(Odd Friend)
 
